@@ -5,13 +5,15 @@
  */
 package com.appsdeveloperblog.photoapp.api.albums.ui.model;
 
+import java.util.UUID;
+
 /**
  *
  * @author skargopolov
  */
 public class AlbumResponseModel {
     private String albumId;
-    private String userId; 
+    private UUID userId;
     private String name;
     private String description;
 
@@ -29,17 +31,11 @@ public class AlbumResponseModel {
         this.albumId = albumId;
     }
 
-    /**
-     * @return the userId
-     */
-    public String getUserId() {
+    public UUID getUserId() {
         return userId;
     }
 
-    /**
-     * @param userId the userId to set
-     */
-    public void setUserId(String userId) {
+    public void setUserId(UUID userId) {
         this.userId = userId;
     }
 

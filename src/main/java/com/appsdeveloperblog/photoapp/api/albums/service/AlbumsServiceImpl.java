@@ -8,13 +8,15 @@ package com.appsdeveloperblog.photoapp.api.albums.service;
 import com.appsdeveloperblog.photoapp.api.albums.data.AlbumEntity;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
+
 import org.springframework.stereotype.Service;
 
 @Service
 public class AlbumsServiceImpl implements AlbumsService {
 
     @Override
-    public List<AlbumEntity> getAlbums(String userId) {
+    public List<AlbumEntity> getAlbums(UUID userId) {
         List<AlbumEntity> returnValue = new ArrayList<>();
         
         AlbumEntity albumEntity = new AlbumEntity();

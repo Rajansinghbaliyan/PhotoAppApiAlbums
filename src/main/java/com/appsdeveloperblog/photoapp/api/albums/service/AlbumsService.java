@@ -8,7 +8,8 @@ package com.appsdeveloperblog.photoapp.api.albums.service;
 
 import com.appsdeveloperblog.photoapp.api.albums.data.AlbumEntity;
 import java.util.List;
+import java.util.UUID;
 
 public interface AlbumsService {
-    List<AlbumEntity> getAlbums(String userId);
+    List<AlbumEntity> getAlbums(UUID userId);
 }

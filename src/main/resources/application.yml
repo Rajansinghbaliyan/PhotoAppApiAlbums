@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: ${APPLICATION_NAME}
+  profiles.active: ${ACTIVE_PROFILE}
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+
+server:
+  port: ${PORT:0}
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+

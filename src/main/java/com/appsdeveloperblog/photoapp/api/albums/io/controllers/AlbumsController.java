@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.modelmapper.ModelMapper;
 import java.lang.reflect.Type;
+import java.util.UUID;
+
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -33,7 +35,7 @@ public class AlbumsController {
                 MediaType.APPLICATION_JSON_VALUE,
                 MediaType.APPLICATION_XML_VALUE,
             })
-    public List<AlbumResponseModel> userAlbums(@PathVariable String id) {
+    public List<AlbumResponseModel> userAlbums(@PathVariable UUID id) {
 
         List<AlbumResponseModel> returnValue = new ArrayList<>();
         
